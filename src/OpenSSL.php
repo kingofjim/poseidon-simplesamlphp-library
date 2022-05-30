@@ -1,6 +1,8 @@
 <?php
 
-class PoseidonOpenSSL {
+namespace Poseidon\OpenSSL;
+
+class OpenSSL {
 
     private static $instance;
 
@@ -14,5 +16,10 @@ class PoseidonOpenSSL {
             self::$instance = new self();
         }
         return self::$instance;
+    }
+
+    public function helloWorld()
+    {
+        echo "Hello World";
     }
 }

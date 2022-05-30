@@ -2,5 +2,8 @@
     "name": "poseidon/simplesamlphp-library",
     "description": "SimpleSAMLphp library from Poseidon",
     "type": "library",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": { "Poseidon\\": "src/" }
+    }
 }
